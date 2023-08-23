@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal web page for Kungsoo Kim" />
+    <meta
+      name="keywords"
+      content="Web, Software, Developer, Development, Portfolio, Korean"
+    />
+    <title>Michael Kim</title>
+
+    <!-- favicon -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ONLY STICKY TOP FOR BUTTON? - not for any other nav elememt - ALSO MAKE LINKS NOT bg-faded (clear background) AND LIGHT/DARK INSTEAD WHEN BUTTON IS CLICKED - JS needed?-->
+
+    <nav
+      class="navbar navbar-light navbar-expand-md justify-content-center"
+      id="home"
+    >
+      <div class="container-fluid">
+        <!-- https://en.wiktionary.org/wiki/%E9%87%91 -->
+        <a class="navbar-brand d-flex w-50 me-auto" href="#home"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%E9%87%91-seal.svg/60px-%E9%87%91-seal.svg.png"
+            alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsingNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse w-100 text-end"
+          id="collapsingNavbar"
+        >
+          <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+            <li class="nav-item">
+              <a
+                href="https://www.linkedin.com/in/kungsoo-kim/"
+                target="_blank"
+                class="nav-link fa fa-lg fa-linkedin"
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://github.com/mkim120"
+                target="_blank"
+                class="nav-link fa fa-lg fa-github"
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="https://open.spotify.com/user/mkhc120?si=09bc4e8bd22844be"
+                target="_blank"
+                class="nav-link fa fa-lg fa-spotify"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ADD FUN HOVER STUFF TO KR NAME - MODAL? GIF OF KOREAN SPELLING AND HANJA ORDER - MEANING OF HANJA - ETC -->
+
+    <!-- Introduction -->
+    <div class="intro-wrapper">
+      <div class="intro">
+        <div class="kname hangul">
+          <p id="hangul"><b>김경수</b></p>
+        </div>
+        <div class="welcome">
+          <h1>Kungsoo Kim</h1>
+          <h3>Web Developer</h3>
+          <p>
+            Welcome to my website! Get to know more about me, and take a look at
+            my portfolio as well as my blog for more information on my work. If
+            you want to chat, feel free to contact me and let's get in touch!
+          </p>
+        </div>
+        <div class="kname hanja">
+          <p id="hanja"><b>金景洙</b></p>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div>
+        <p>
+          I'm an aspiring web developer with experience in back-end development
+          and exposure to web design and user experience. I created this web
+          page to detail my web development journey and showcase my current HTML
+          and CSS skills. This page will also provide the opportunity to view my
+          work and reach out to me to connect.
+        </p>
+      </div>
+      <div id="about">
+        <h2>About Me</h2>
+        <p>
+          I was born in South Korea and immigrated with my family to the United
+          States at the age of seven. My birth name is Kungsoo (경수), but I
+          also go by Michael as my "American" name. I have an immense passion
+          and respect for my background and culture, and I strive to maintain
+          and improve my Korean as a first generation immigrant.
+        </p>
+
+        <p>
+          Currently, I am an Amazon Seller Support Associate for Korean and
+          English speaking business partners selling on the Amazon platform.
+          While I am able to utilize and hone my Korean language skills through
+          this role, my goal is to change careers into the tech field. After
+          graduating from the University of Pittsburgh with a Bachelor's degree
+          in Information Science, I completed a Back-end Java Development boot
+          camp focusing on Client-Server Programming (SQL, Spring, JPA, REST) as
+          well as covering topics such as Data Structures, Algorithms, Design
+          Patterns, Cloud/Microservice deployments, and DevOps (e.g. CI/CD).
+        </p>
+
+        <p>
+          However, my passion has always been for Front-end Development and User
+          Experience. I designed this web page to demonstrate my coding skills
+          and to channel my creativity through web design, and I look forward to
+          entering the tech industry to continue working on websites.
+        </p>
+      </div>
+
+      <div>
+        <h2>About the Web Page</h2>
+        <p>
+          Thanks for reading this far in my page! In the previous section, you
+          learned about me and the purpose of this web page. I hope you got a
+          better understanding of who I am and why I created this page.
+        </p>
+
+        <p>
+          The next section includes a blog article on my journey to becoming a
+          web developer. My blog will highlight what I've learned so far and
+          what I've found most interesting. Please look forward to reading it!
+          Lastly, at the end of the page, I've included a form to contact me
+          through email.
+        </p>
+      </div>
+
+      <hr class="solid" />
+
+      <div id="portfolio">
+        <h2 class="mb-3">Portfolio</h2>
+
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card h-100">
+              <!-- <img src="..." class="card-img-top" alt="Character Cafe" /> -->
+              <div class="card-body">
+                <h5 class="card-title">Character Cafe</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Cafe Web Application
+                </h6>
+                <p class="card-text">
+                  Online cafe web application allowing users to view the menu
+                  and order food and beverages via a checkout process. A
+                  separate login portal enables managers to add, modify, and
+                  remove items.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">HTML, CSS, PHP, MySQL, WAMP</small>
+                </p>
+                <a
+                  href="https://github.com/mkim120/Character-Cafe"
+                  class="btn btn-primary"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card h-100">
+              <!-- <img src="..." class="card-img-top" alt="TEnmo" /> -->
+              <div class="card-body">
+                <h5 class="card-title">TEnmo</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Money Transfer Application
+                </h6>
+                <p class="card-text">
+                  Peer-to-peer money transfer application allowing users to
+                  send, request, and approve money transfers. Front end is a
+                  command-line application communicating with a RESTful API
+                  server in the back end.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted"
+                    >Java, Spring Boot, PostgreSQL, RESTful API, Spring Data
+                    JPA, Spring Security</small
+                  >
+                </p>
+                <a
+                  href="https://github.com/mkim120/TEnmo"
+                  class="btn btn-primary"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card h-100">
+              <!-- <img src="..." class="card-img-top" alt="SP" /> -->
+              <div class="card-body">
+                <h5 class="card-title">PROJECT</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Side Project</h6>
+                <p class="card-text">
+                  [WIP] Currently working on a side project.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Skills</small>
+                </p>
+                <a href="#" class="btn btn-primary">GitHub</a>
+                <!-- <a href="#" class="btn btn-primary">CodePen</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="solid" />
+
+      <!-- SEPARATE SECTION FOR BLOG - DIFFERENT BACKGROUND? -->
+
+      <div class="blog indent">
+        <h2>Blog: My Web Dev Journey</h2>
+        <h5>By: Michael Kim | Posted: Aug 4, 2023</h5>
+        <h3>The First Steps</h3>
+        <p>
+          After I graudated college and started working with Amazon, I didn't
+          get the opportunity to enter the tech industry with my degree in
+          Information Science. However, while working full-time, I took the
+          chance to join a Back-end Java Development boot camp that focused on
+          Client-Server Programming (SQL, Spring, JPA, REST) and covered topics
+          such as Data Structures, Algorithms, Design Patterns,
+          Cloud/Microservice deployments, and DevOps (e.g. CI/CD). This program
+          served as a refresher for a lot of what I had learned in college and
+          as a stepping stone into the world of web and software development.
+        </p>
+
+        <h3>Composing Code</h3>
+        <p>
+          However, I knew that my passion had always been for Front-end
+          Development and User Experience. I'd like to attest my interest in
+          coding and design to my love for music and the arts. Since I was a
+          child, I enjoyed playing and listening to music, and I started
+          learning the piano and clarinet during grade school. When I entered
+          high school, I was captivated by the world of percussion and joined
+          the marching band to play keyboard percussion instruments like the
+          <a href="https://en.wikipedia.org/wiki/Marimba" target="_blank"
+            >marimba</a
+          >
+          and
+          <a href="https://en.wikipedia.org/wiki/Vibraphone" target="_blank"
+            >vibraphone</a
+          >. In college, I was an active member of the varsity marching band in
+          the baritone section and also performed in the symphonic band and
+          basketball pep band.
+        </p>
+        <img
+          class="blog-img"
+          src="https://images.huffingtonpost.com/2016-06-29-1467212459-8532299-pianotocomputer.png"
+          alt=""
+        />
+        <p>
+          What I've found most interesting in my journey so far is that in music
+          and coding, you're basically learning a new language. We learn to read
+          notes and play them to create a song the same way that we learn syntax
+          and write code to create programs. I've played an instrument for as
+          long as I can remember, and realizing the shared principles between
+          these two seemingly unrelated topics has allowed me to keep my mind
+          open to all of the opportunities that are available within the vast
+          field of technology.
+        </p>
+
+        <h3>The Next Steps</h3>
+        <p>
+          With this in mind, it's my goal to enter the world of web development,
+          and as I continue to find bridges between my passion for music and
+          tech, I desire to make an impact in the tech industry as a contributor
+          who recognizes the significance of patience and consistency, whether
+          that involves overcoming a difficult piece of music or dealing with a
+          challenging coding problem. Contact me if you also love music and have
+          a passion for technology, and let's discuss!
+        </p>
+      </div>
+
+      <hr class="solid" />
+
+      <!-- REMOVE FORM AND ADD EMAIL LINK WITH AUTO COPY LIKE ROKA - use popup modal? -->
+
+      <div class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="bottom-nav-logo">
+        <a href="#home">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%E9%87%91-seal.svg/60px-%E9%87%91-seal.svg.png"
+            alt="Logo"
+        /></a>
+      </div>
+
+      <!-- Is bottom nav centered? Specificially "Portfolio relative to the logo and social icons" -->
+
+      <div class="bottom-nav">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/kungsoo-kim/"
+            target="_blank"
+            class="fa fa-linkedin"
+          ></a>
+          <a
+            href="https://github.com/mkim120"
+            target="_blank"
+            class="fa fa-github"
+          ></a>
+          <a
+            href="https://open.spotify.com/user/mkhc120?si=09bc4e8bd22844be"
+            target="_blank"
+            class="fa fa-spotify"
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

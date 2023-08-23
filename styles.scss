@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Noto+Serif&family=Noto+Serif+KR&display=swap");
+
+/* ADD SCSS VARIABLES FOR COLOR? */
+
+body {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-family: "Noto Serif KR", serif;
+  /* 	font-family: 'Noto Serif TC', serif; */
+  font-size: 17px;
+}
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+  padding: 1rem;
+  
+  a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0;
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+
+    &:hover {
+      color: #ed1a76;
+    }
+  }
+}
+
+/* .topnav a.active {
+  background-color: #2196F3;
+  color: white;
+} */
+
+.social a {
+  color: #333;
+  text-align: center;
+  padding: 0;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* intro */
+
+.intro-wrapper {
+  width: min(100%, 1800px);
+  margin-inline: auto;
+}
+
+.intro {
+  /*how to make intro show in 100vh without messing up responsiveness...*/
+  /*   height: 85vh;
+  margin: 0; */
+  display: grid;
+  grid-template-areas: "hangul welcome hanja";
+  /* 	grid-gap: 5%; */
+  /* 	padding: 2rem; */
+  background-color: white;
+  text-align: center;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  /* https://www.digitalocean.com/community/tutorials/css-align-justify */
+  /* 	min-height: 20vh; */ /*what does this do?*/
+
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #037a76;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+.welcome {
+  // width: 75%;
+  padding-inline: 10%;
+  margin: auto;
+  grid-area: welcome;
+}
+
+.kname {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 10vh; /*vw or vh?*/
+
+// VH AND VW IS REALLY MESSING WITH EXTRA SPACE TO THE RIGHT OF THE SCREEN AT CERTAIN BREAKPOINTS AND PHONE/TABLET SIZES...
+
+  color: #037a76;
+  letter-spacing: 0.5rem;
+  // padding: 1.5vw;
+  /*extra paddding causes issue with white space on right side at 940px width viewport*/
+}
+
+.hangul {
+  grid-area: hangul;
+}
+.hanja {
+  grid-area: hanja;
+}
+
+/* main */
+
+main {
+  padding: 2rem 10%;
+  background-color: #249f9c;
+}
+
+.indent p {
+  text-indent: 2rem;
+}
+
+#about .fa {
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 1rem;
+  color: #037a76;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.blog a {
+  color: #037a76;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+.blog-img {
+  max-width: 75%;
+  margin-bottom: 16px;
+}
+
+.contact {
+  width: 75%;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.btn {
+  background-color: #037a76;
+  border-color: #037a76;
+
+  &:hover {
+    background-color: #037a76;
+    border-color: #037a76;
+    opacity: 0.7;
+  }
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  padding-top: 6rem;
+
+  a:hover {
+    color: #ed1a76;
+  }
+}
+
+.bottom-nav-logo a {
+  color: #333;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bottom-nav {
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+
+  a {
+    padding: 0;
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+.footer-social {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 940px) {
+  .topnav a,
+  .topnav-right,
+  .topnav {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .kname {
+    padding: 0;
+  }
+}
+
+/* smaller font due to intro div breaking out of html body */
+@media screen and (max-width: 576px) {
+  .kname {
+    font-size: 5vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    grid-template-areas:
+      "hangul hanja"
+      "welcome welcome";
+    padding: 2rem;
+    gap: 2rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .kname {
+    grid-gap: 5rem;
+  }
+  /* spacing at smallest viewport? */
+  /* .hangul {
+
+	} */
+
+  .contact {
+    width: 100%;
+  }
+}
