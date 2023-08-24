@@ -135,6 +135,14 @@ main {
   }
 }
 
+.list-group-item a {
+  color: #037a76;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
 .blog a {
   color: #037a76;
 
