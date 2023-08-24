@@ -1,0 +1,137 @@
+/*Global Styles*/
+
+.categories {
+    /*width: 288px;*/
+    /*height: 425px;*/
+    /*take out the height of containing element to allow for flexibility*/
+    color: #ffffff;
+    padding-bottom: 20px;
+    display: flex; /*default is row*/
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+.categories h2 {
+    font-family: 'Alegreya SC', serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.142857em;
+    text-align: center;
+    margin: 0px;
+    padding: 30px 0px 15px;
+}
+.categories img {
+    /*width: 225px;*/
+    max-width: 100%;
+    /*height: 148px;*/
+    display: block;
+    margin: 0px auto;
+}
+.categories p {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.142857em;
+    width: 80%;
+    margin: 20px auto;
+}
+.categories a {
+    font-family: 'Alegreya', serif;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    color: #ffffff;
+    /*width: 160px;*/
+    width: 55%;
+    /*height: 30px;*/
+    line-height: 30px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.brown {
+    background-color: #714C38;
+}
+.yellow {
+    background-color: #B99747;
+}
+.salmon {
+    background-color: #A75A41;
+}
+.green {
+    background-color: #A5A44B;
+}
+.blue {
+    background-color: #67979A;
+}
+
+.background {
+    background-image: url("../images/phlf-cover-house.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh; /*vertical height*/
+}
+
+.infoBlocks {
+    display: flex;
+}
+
+h1 img {
+    max-width: 100%;
+}
+
+
+/*Media Queries*/
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    .infoBlocks {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    nav {
+        display: none;
+    }
+    .infoBlocks {
+        flex-direction: column;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 481px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    header h1 {
+        flex: 1.2;
+        margin: 0;
+    }
+    header nav {
+        flex: 2;
+    }
+    header img {
+        margin: 30px;
+    }
+    
+    .navbar {
+        font-family: 'Alegreya SC', serif;
+        font-size: 24px;
+        line-height: 33px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar a {
+        text-decoration: none;
+        color: #5D2929;
+    }
+}
