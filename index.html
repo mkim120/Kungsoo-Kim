@@ -25,20 +25,22 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body id="home">
+
     <!-- ONLY STICKY TOP FOR BUTTON? - not for any other nav elememt - ALSO MAKE LINKS NOT bg-faded (clear background) AND LIGHT/DARK INSTEAD WHEN BUTTON IS CLICKED - JS needed?-->
+
+    <!-- HOW TO MAINTAIN HEADER/FOOTER FOR OTHER PAGES LIKE PHP? -->
 
     <nav
       class="navbar navbar-light navbar-expand-md justify-content-center"
-      id="home"
     >
       <div class="container-fluid">
         <!-- https://en.wiktionary.org/wiki/%E9%87%91 -->
-        <a class="navbar-brand d-flex w-50 me-auto" href="#home"
-          ><img
+        <div class="navbar-brand d-flex w-50 me-auto"
+          ><a href="#home"><img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%E9%87%91-seal.svg/60px-%E9%87%91-seal.svg.png"
             alt="Logo"
-        /></a>
+        /></a></div>
         <button
           class="navbar-toggler"
           type="button"
@@ -288,7 +290,7 @@
 
       <hr class="solid" />
 
-      <!-- SEPARATE SECTION FOR BLOG - DIFFERENT BACKGROUND? -->
+      <!-- MOVE BLOG TO SEPARATE PAGE WITH SAME HEADER/FOOTER AS MAIN -->
 
       <div class="blog indent">
         <h2>Blog: My Web Dev Journey</h2>
@@ -309,7 +311,7 @@
         <h3>Composing Code</h3>
         <p>
           However, I knew that my passion had always been for Front-end
-          Development and User Experience. I'd like to attest my interest in
+          Development and User Interface design. I'd like to attest my interest in
           coding and design to my love for music and the arts. Since I was a
           child, I enjoyed playing and listening to music, and I started
           learning the piano and clarinet during grade school. When I entered
@@ -381,6 +383,7 @@
 
     <footer>
       <div class="bottom-nav-logo">
+        <!-- WHY DOES DIV GET CLICKABLE? I ONLY WANT IMG LOGO CLICKABLE TO TOP OF PAGE -->
         <a href="#home">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%E9%87%91-seal.svg/60px-%E9%87%91-seal.svg.png"
