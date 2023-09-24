@@ -36,11 +36,19 @@
     >
       <div class="container-fluid">
         <!-- https://en.wiktionary.org/wiki/%E9%87%91 -->
-        <div class="navbar-brand d-flex w-50 me-auto"
-          ><a href="#home"><img
+        <div class="navbar-brand d-flex w-50 me-auto">
+          <!-- <a href="#home"><img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%E9%87%91-seal.svg/60px-%E9%87%91-seal.svg.png"
             alt="Logo"
-        /></a></div>
+        /></a> -->
+
+        <!-- dark mode toggle -->
+        <label class="toggle-switch">
+          <input type="checkbox" id="mode-toggle">
+          <span class="slider"></span>
+        </label>
+        
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -81,9 +89,9 @@
             </li>
             <li class="nav-item">
               <a
-                href="https://open.spotify.com/user/mkhc120?si=09bc4e8bd22844be"
+                href="https://codepen.io/Kungsoo-Kim"
                 target="_blank"
-                class="nav-link fa fa-lg fa-spotify"
+                class="nav-link fa fa-lg fa-codepen"
               ></a>
             </li>
           </ul>
@@ -178,11 +186,12 @@
 
         <div class="row">
           <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card h-100">
-              <!-- <img src="..." class="card-img-top" alt="Character Cafe" /> -->
+            <div class="card h-100 bg-transparent">
+              <img src="media/menu.jpeg" class="card-img-top" alt="Character Cafe Example Menu" />
               <div class="card-body">
                 <h5 class="card-title">Character Cafe</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
+                <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
+                <h6 class="card-subtitle mb-2 ">
                   Cafe Web Application
                 </h6>
                 <p class="card-text">
@@ -192,7 +201,8 @@
                   remove items.
                 </p>
                 <p class="card-text">
-                  <small class="text-muted">HTML, CSS, PHP, MySQL, WAMP</small>
+                  <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
+                  <small >HTML, CSS, PHP, MySQL, WAMP</small>
                 </p>
                 <a
                   href="https://github.com/mkim120/Character-Cafe" target="_blank" class="btn btn-primary"
@@ -202,11 +212,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card h-100">
-              <!-- <img src="..." class="card-img-top" alt="TEnmo" /> -->
+            <div class="card h-100 bg-transparent">
+              <img src="media/tenmo-erd.png" class="card-img-top" alt="TEnmo ERD" />
               <div class="card-body">
                 <h5 class="card-title">TEnmo</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
+                <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
+                <h6 class="card-subtitle mb-2 ">
                   Money Transfer Application
                 </h6>
                 <p class="card-text">
@@ -216,7 +227,8 @@
                   server in the back end.
                 </p>
                 <p class="card-text">
-                  <small class="text-muted"
+                  <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
+                  <small 
                     >Java, Spring Boot, PostgreSQL, RESTful API, Spring Data
                     JPA, Spring Security</small
                   >
@@ -229,11 +241,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card h-100">
-              <!-- <img src="..." class="card-img-top" alt="SP" /> -->
+            <div class="card h-100 bg-transparent">
+              <img src="media/figma-prototype.png" class="card-img-top" alt="Streaming Tower of Pizza Figma Prototype" />
               <div class="card-body">
                 <h5 class="card-title">IS1052 Projects</h5>
-                <h6 class="card-subtitle mb-2 text-muted">
+                <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
+                <h6 class="card-subtitle mb-2 ">
                   User-Centered Design
                 </h6>
                 <p class="card-text">
@@ -243,17 +256,17 @@
                 </p>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">
+                <li class="list-group-item bg-transparent border-0">
                   <a href="1052/index.html" target="_blank" class="card-link"
                     >Streaming Tower of Pizza</a
                   >
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item bg-transparent border-0">
                   <a href="PHLF/index.html" target="blank" class="card-link"
                     >PHLF</a
                   >
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item bg-transparent">
                   <a
                     href="GoFlyAKite/index.html"
                     target="blank"
@@ -261,18 +274,11 @@
                     >Go Fly A Kite</a
                   >
                 </li>
-                <li class="list-group-item">
-                  <a
-                    href="hello.html"
-                    target="blank"
-                    class="card-link"
-                    >Project 5 Additional Page</a
-                  >
-                </li>
               </ul>
               <div class="card-body">
                 <p class="card-text">
-                  <small class="text-muted"
+                  <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
+                  <small 
                     >HTML, CSS, Balsamiq Wireframes, Figma</small
                   >
                 </p>
@@ -384,11 +390,11 @@
     <footer>
       <div class="bottom-nav-logo">
         <!-- WHY DOES DIV GET CLICKABLE? I ONLY WANT IMG LOGO CLICKABLE TO TOP OF PAGE -->
-        <a href="#home">
+        <!-- <a href="#home">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%E9%87%91-seal.svg/60px-%E9%87%91-seal.svg.png"
             alt="Logo"
-        /></a>
+        /></a> -->
       </div>
 
       <!-- Is bottom nav centered? Specificially "Portfolio relative to the logo and social icons" -->
@@ -411,14 +417,15 @@
             class="fa fa-github"
           ></a>
           <a
-            href="https://open.spotify.com/user/mkhc120?si=09bc4e8bd22844be"
+            href="https://codepen.io/Kungsoo-Kim"
             target="_blank"
-            class="fa fa-spotify"
+            class="fa fa-codepen"
           ></a>
         </div>
       </div>
     </footer>
 
+    <script src="script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
