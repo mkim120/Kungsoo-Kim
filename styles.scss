@@ -8,7 +8,6 @@ body {
   font-family: "Noto Serif KR", serif;
   /* 	font-family: 'Noto Serif TC', serif; */
   font-size: 17px;
-  
   transition: all 0.4s ease-in;
 }
 
@@ -19,6 +18,9 @@ body {
   background-color: #121212;
   color: #f2f2f2;
   transition: all 0.4s ease-in;
+
+  // border for portfolio BS5 cards - any other BS borders affected?
+  border-color: #037a76;
 }
 
 .dark-mode h2, 
@@ -27,14 +29,18 @@ body {
   color: #037a76;
 }
 
+//border to separate name/intro and about me section in dark mode
+#dark-mode-border {
+  margin: 0 5%;
+  display: none;
+}
+
 .toggle-switch {
   position: relative;
   display: inline-block;
   width: 3.75rem;
   height: 2.13rem;
-  margin-bottom: 0.63rem;
   // margin-inline: auto;
-  margin-left: 8px;
 
   input {
     opacity: 0;
@@ -203,6 +209,24 @@ main {
     opacity: 0.7;
   }
 }
+
+// #portfolio .row {
+//   margin-inline: -10%; 
+// }
+
+// .hover-zoom {
+//   overflow: hidden;
+  
+//   img {
+//     object-fit: cover;
+//     transition: all 0.3s ease;
+
+//     &:hover {
+//       transform: scale(1.5);
+//     }
+//   }
+// }
+
 
 .list-group-item a {
   color: #037a76;

@@ -122,6 +122,8 @@
       </div>
     </div>
 
+    <hr class="solid" id="dark-mode-border" />
+
     <main>
       <div>
         <p>
@@ -171,11 +173,11 @@
         </p>
 
         <p>
-          The next section includes a blog article on my journey to becoming a
+          My website also includes a blog article on my journey to becoming a
           web developer. My blog will highlight what I've learned so far and
           what I've found most interesting. Please look forward to reading it!
-          Lastly, at the end of the page, I've included a form to contact me
-          through email.
+          Lastly, you can find my contact information and complete a form to 
+          contact me through email.
         </p>
       </div>
 
@@ -188,10 +190,20 @@
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card h-100 bg-transparent">
               <img src="media/menu.jpeg" class="card-img-top" alt="Character Cafe Example Menu" />
+              <div class="modal" id="img-modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Character Cafe</h5>
-                <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
-                <h6 class="card-subtitle mb-2 ">
+                <!-- removed class="text-muted" due to dark mode conflict with BS5 important property -->
+                <h6 class="card-subtitle mb-2">
                   Cafe Web Application
                 </h6>
                 <p class="card-text">
@@ -200,8 +212,10 @@
                   separate login portal enables managers to add, modify, and
                   remove items.
                 </p>
+              </div>
+              <div class="card-footer">
                 <p class="card-text">
-                  <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
+                  <!-- removed class="text-muted" due to BS5 dark mode conflict -->
                   <small >HTML, CSS, PHP, MySQL, WAMP</small>
                 </p>
                 <a
@@ -216,7 +230,6 @@
               <img src="media/tenmo-erd.png" class="card-img-top" alt="TEnmo ERD" />
               <div class="card-body">
                 <h5 class="card-title">TEnmo</h5>
-                <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
                 <h6 class="card-subtitle mb-2 ">
                   Money Transfer Application
                 </h6>
@@ -226,8 +239,9 @@
                   command-line application communicating with a RESTful API
                   server in the back end.
                 </p>
+              </div>
+              <div class="card-footer">
                 <p class="card-text">
-                  <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
                   <small 
                     >Java, Spring Boot, PostgreSQL, RESTful API, Spring Data
                     JPA, Spring Security</small
@@ -245,7 +259,6 @@
               <img src="media/figma-prototype.png" class="card-img-top" alt="Streaming Tower of Pizza Figma Prototype" />
               <div class="card-body">
                 <h5 class="card-title">IS1052 Projects</h5>
-                <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
                 <h6 class="card-subtitle mb-2 ">
                   User-Centered Design
                 </h6>
@@ -275,9 +288,8 @@
                   >
                 </li>
               </ul>
-              <div class="card-body">
+              <div class="card-footer">
                 <p class="card-text">
-                  <!-- removed class="text-muted" due to dark mode conflicts with BS5 important -->
                   <small 
                     >HTML, CSS, Balsamiq Wireframes, Figma</small
                   >
