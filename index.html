@@ -32,7 +32,7 @@
     <!-- HOW TO MAINTAIN HEADER/FOOTER FOR OTHER PAGES LIKE PHP? -->
 
     <nav
-      class="navbar navbar-light navbar-expand-md justify-content-center"
+      class="navbar navbar-light navbar-expand-md justify-content-center sticky-top"
     >
       <div class="container-fluid">
         <!-- https://en.wiktionary.org/wiki/%E9%87%91 -->
@@ -42,12 +42,22 @@
             alt="Logo"
         /></a> -->
 
+        <!-- <a href="#home">
+          <div id="square">&#9723;</div>
+          <div id="circle">&#9675;</div>
+          <div id="triangle">&#9651;</div>
+        </a> -->
+        <!-- https://www.jukeboxprint.com/blog/the-making-of-the-squid-game-business-card -->
+        <!-- ㅁㅇㅅ -->
+
         <!-- dark mode toggle -->
-        <label class="toggle-switch">
-          <input type="checkbox" id="mode-toggle">
-          <span class="slider"></span>
-        </label>
-        
+        <div class="toggle">
+          <label class="toggle-switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+
         </div>
         <button
           class="navbar-toggler"
@@ -63,13 +73,19 @@
         >
           <ul class="navbar-nav w-100 justify-content-center">
             <li class="nav-item active">
-              <a class="nav-link" href="#about">About</a>
+              <div class="link-box">
+                <a class="nav-link" href="#about">About</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <div class="link-box">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <div class="link-box">
+                <a class="nav-link" href="#contact">Contact</a>
+              </div>
             </li>
           </ul>
           <ul class="nav navbar-nav ms-auto w-100 justify-content-end">

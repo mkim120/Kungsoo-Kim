@@ -10,6 +10,7 @@ body {
 }
 
 .dark-mode,
+.dark-mode nav,
 .dark-mode a,
 .dark-mode footer a,
 .dark-mode .card {
@@ -78,29 +79,52 @@ input:checked + .slider:before {
   transform: translateX(1.63rem);
 }
 
-.topnav {
+.navbar-brand a {
+  float: none;
   position: relative;
-  overflow: hidden;
-  background-color: #333;
-  padding: 1rem;
-}
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
+  font-family: sans-serif; /* serif font affects symbol sizes */
+  letter-spacing: -1rem;
+  margin: 0;
   padding: 0;
-  margin: 1rem;
+  color: #037a76;
   text-decoration: none;
-  font-size: 1rem;
-}
-.topnav a:hover {
-  color: #ed1a76;
 }
 
-/* .topnav a.active {
-  background-color: #2196F3;
-  color: white;
-} */
+#square {
+  transform: rotate(-2deg);
+  display: inline-block;
+  font-size: 4rem;
+  letter-spacing: -0.7rem;
+}
+
+#circle {
+  display: inline-block;
+  font-size: 5rem;
+}
+
+#triangle {
+  transform: rotate(-4deg);
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.link-box {
+  display: block;
+  float: right;
+  clear: both;
+}
+
+.navbar {
+  background-color: white;
+}
+.navbar .navbar-brand {
+  padding: 0;
+}
+.navbar .navbar-collapse a {
+  padding: 0;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
 .social a {
   color: #333;
   text-align: center;
@@ -112,8 +136,11 @@ input:checked + .slider:before {
 
 /* intro */
 .intro-wrapper {
-  width: min(100%, 1800px);
-  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .intro {
@@ -146,7 +173,6 @@ input:checked + .slider:before {
 }
 
 .welcome {
-  padding-inline: 10%;
   margin: auto;
   grid-area: welcome;
 }
@@ -154,7 +180,7 @@ input:checked + .slider:before {
 .kname {
   writing-mode: vertical-lr;
   text-orientation: upright;
-  font-size: 10vh; /*vw or vh?*/
+  font-size: 4rem;
   color: #037a76;
   letter-spacing: 0.5rem;
   /*extra paddding causes issue with white space on right side at 940px width viewport*/
@@ -291,12 +317,6 @@ footer a:hover {
     padding: 0;
   }
 }
-/* smaller font due to intro div breaking out of html body */
-@media screen and (max-width: 576px) {
-  .kname {
-    font-size: 5vh;
-  }
-}
 @media screen and (max-width: 768px) {
   .intro {
     grid-template-areas: "hangul hanja" "welcome welcome";
@@ -306,8 +326,12 @@ footer a:hover {
   .intro h1 {
     font-size: 3rem;
   }
+  .welcome {
+    padding-inline: 10%;
+  }
   .kname {
     grid-gap: 5rem;
+    font-size: 5vh;
   }
   /* spacing at smallest viewport? */
   /* .hangul {
@@ -315,5 +339,10 @@ footer a:hover {
   } */
   .contact {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1399px) {
+  .kname {
+    font-size: 7rem;
   }
 }/*# sourceMappingURL=styles.css.map */

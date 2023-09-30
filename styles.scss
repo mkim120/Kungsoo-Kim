@@ -11,7 +11,14 @@ body {
   transition: all 0.4s ease-in;
 }
 
+// disable horizontal scroll 
+// html, body {
+//   max-width: 100%;
+//   overflow-x: hidden;
+// }
+
 .dark-mode, 
+.dark-mode nav, 
 .dark-mode a, 
 .dark-mode footer a, 
 .dark-mode .card {
@@ -19,7 +26,7 @@ body {
   color: #f2f2f2;
   transition: all 0.4s ease-in;
 
-  // border for portfolio BS5 cards - any other BS borders affected?
+  // border for portfolio cards - any other borders affected?
   border-color: #037a76;
 }
 
@@ -34,6 +41,10 @@ body {
   margin: 0 5%;
   display: none;
 }
+
+// .toggle {
+//   margin: auto 0 auto 1rem;
+// }
 
 .toggle-switch {
   position: relative;
@@ -85,31 +96,62 @@ input:checked + .slider:before {
   transform: translateX(1.63rem);
 }
 
-.topnav {
+.navbar-brand a {
+  float: none;
   position: relative;
-  overflow: hidden;
-  background-color: #333;
-  padding: 1rem;
-  
-  a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 0;
-    margin: 1rem;
-    text-decoration: none;
-    font-size: 1rem;
+  font-family: sans-serif; /* serif font affects symbol sizes */
+  letter-spacing: -1rem;
+  margin: 0;
+  padding: 0;
+  color: #037a76;
+  text-decoration: none;
+}
 
-    &:hover {
-      color: #ed1a76;
-    }
+#square {
+  transform: rotate(-2deg);
+  display: inline-block;
+  font-size: 4rem;
+  letter-spacing: -0.7rem;
+}
+#circle {
+  display: inline-block;
+	font-size: 5rem;
+}
+#triangle {
+  transform: rotate(-4deg);
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.link-box {
+  display: block;
+  float: right;
+  clear: both;
+}
+
+// .navbar-nav {
+//   text-align: center;
+// }
+
+.navbar {
+  background-color: white;
+
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .navbar-collapse a {
+    padding: 0;
+    margin: 0.5rem 0 0.5rem 0;
   }
 }
 
-/* .topnav a.active {
-  background-color: #2196F3;
-  color: white;
-} */
+// .navbar-toggler:focus,
+// .navbar-toggler:active,
+// .navbar-toggler-icon:focus {
+//     outline: none;
+//     box-shadow: none;
+// }
 
 .social a {
   color: #333;
@@ -122,9 +164,18 @@ input:checked + .slider:before {
 
 /* intro */
 
+// .intro-wrapper {
+//   width: min(100%, 1800px);
+//   margin-inline: auto;
+// }
+
+// full-page intro
 .intro-wrapper {
-  width: min(100%, 1800px);
-  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .intro {
@@ -132,6 +183,7 @@ input:checked + .slider:before {
   /*   height: 85vh;
   margin: 0; */
   display: grid;
+  // grid-template-columns: auto 1fr auto;
   grid-template-areas: "hangul welcome hanja";
   /* 	grid-gap: 5%; */
   /* 	padding: 2rem; */
@@ -162,7 +214,6 @@ input:checked + .slider:before {
 
 .welcome {
   // width: 75%;
-  padding-inline: 10%;
   margin: auto;
   grid-area: welcome;
 }
@@ -170,9 +221,9 @@ input:checked + .slider:before {
 .kname {
   writing-mode: vertical-lr;
   text-orientation: upright;
-  font-size: 10vh; /*vw or vh?*/
+  font-size: 4rem;
 
-// VH AND VW IS REALLY MESSING WITH EXTRA SPACE TO THE RIGHT OF THE SCREEN AT CERTAIN BREAKPOINTS AND PHONE/TABLET SIZES...
+// VH AND VW IS REALLY MESSING WITH EXTRA SPACE TO THE RIGHT OF THE SCREEN (OVERFLOW) AT CERTAIN BREAKPOINTS AND PHONE/TABLET SIZES...
 
   color: #037a76;
   letter-spacing: 0.5rem;
@@ -341,13 +392,7 @@ footer {
   }
 }
 
-/* smaller font due to intro div breaking out of html body */
-@media screen and (max-width: 576px) {
-  .kname {
-    font-size: 5vh;
-  }
-}
-
+// Bootstrap 5 md breakpoint
 @media screen and (max-width: 768px) {
   .intro {
     grid-template-areas:
@@ -361,8 +406,13 @@ footer {
     }
   }
 
+  .welcome {
+    padding-inline: 10%;
+  }
+
   .kname {
     grid-gap: 5rem;
+    font-size: 5vh;
   }
   /* spacing at smallest viewport? */
   /* .hangul {
@@ -371,5 +421,12 @@ footer {
 
   .contact {
     width: 100%;
+  }
+}
+
+// BS5 breakpoint before xl
+@media screen and (min-width: 1399px) {
+  .kname {
+    font-size: 7rem;
   }
 }
