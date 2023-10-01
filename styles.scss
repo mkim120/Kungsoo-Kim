@@ -12,10 +12,10 @@ body {
 }
 
 // disable horizontal scroll 
-// html, body {
-//   max-width: 100%;
-//   overflow-x: hidden;
-// }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .dark-mode, 
 .dark-mode nav, 
@@ -245,6 +245,28 @@ main {
   background-color: #249f9c;
 }
 
+// fade and slide in on scroll
+
+.item {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.left {
+  transform-origin: left center;
+  transform: translateX(-50%);
+}
+
+.right {
+  transform-origin: right center;
+  transform: translateX(50%);
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
 .indent p {
   text-indent: 2rem;
 }
@@ -398,7 +420,7 @@ footer {
     grid-template-areas:
       "hangul hanja"
       "welcome welcome";
-    padding: 2rem;
+    padding-top: 2rem;
     gap: 2rem;
 
     h1 {
