@@ -1,2 +1,0 @@
-# Kungsoo-Kim
-Personal Website
