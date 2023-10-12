@@ -33,7 +33,7 @@ modeToggle.addEventListener('click', toggleMode);
 const items = document.querySelectorAll('.item');
 
 const options = {
-  threshold: 0.5
+  threshold: 0.4
 }
 
 function addSlideIn(entries) {
