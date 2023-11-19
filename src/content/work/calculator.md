@@ -2,7 +2,7 @@
 title: Calculator App
 publishDate: 2023-10-25 00:00:00
 img: /assets/calculator.png
-img_alt: K-Drama Quiz Home Screen
+img_alt: Calculator User Interface
 description: |
   Simple Calculator App created using ES6 classes. Capable of all the basic calculator operations (addition, subtraction, multiplication, division, and calculating a percent).  
 tags:
