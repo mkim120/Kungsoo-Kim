@@ -1,5 +1,3 @@
 # Personal Website: Portfolio
 
-## Built with Astro 🚀
-
-[documentation](https://docs.astro.build)
+## Built with [Astro](https://docs.astro.build) 🚀
